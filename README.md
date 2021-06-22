@@ -29,31 +29,21 @@ upper and lowercase letters as equivalent. Examples:
 
 ## Build and Run
 
-(*These instructions are for a compiled language like
-C++. For an interpreted language like Python, delete these
-instructions and use those below.*)
+This script can be run within a virtual environement in a Linux shell.
+The script will use Python version 3.8 or higher.  This is installed by 
+default on Ubuntu 20.04 and higher.
 
-To build the program, type `make`. This will use the file
-named `Makefile` to compile the program.
+Initiating virtual environment and dependencies:
+```
+virtualenv -p python3 env
+source env/bin/activate
+pip install -r requirements.txt
+```
 
-To run the program once it is built, say
-
-    ./domletters <input.txt
-
-where `input.txt` is the input file to be processed.
-
-## Build and Run
-
-(*These instructions are for an interpreted language like
-Python. For a compiled language like C++, delete these
-instructions and use those above. Note that your script
-should be marked executable and set up to run on a Linux box
-using a standard interpreter: for example, in Python the
-first line should be something like `#!/usr/bin/python3`.*)
-
-To run the program, say
-
-    ./domletters <input.txt
+To run the program:
+```
+python3 domletters.py input.txt
+```
 
 where `input.txt` is the input file to be processed.
 
